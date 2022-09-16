@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href=""><img src="./img/Logo.png" alt="Logo alura">Alura</a>
+    </header>
+    <main>
+        <div class="contenedor-textInput-botones">
+
+        <section class="section-textInput">
+            <textarea cols="50" rows="20" class="textInput" placeholder="Ingrese Texto Aqui"></textarea>
+        </section>
+        
+            <p class="anuncio"><img src="./img/Vector.png" alt="">Solo letras minúsculas y sin acentos</p>
+            <div class="botones">
+                <button class="Encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="Desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>          
+        </div>
+        <section class="section-textArea-resultado">
+            <textarea class="textArea-mensaje" cols="50" rows="20"></textarea>
+            <div class="container-btncopiar">
+                <button class="btncopiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+            <div class="mensajesAlert">
+            <p class="alert">Ningún texto ha sido introducido</p>
+            <p class="mensaje-espera">Esperando texto...</p>
+        </div>
+        </section>
+       
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
